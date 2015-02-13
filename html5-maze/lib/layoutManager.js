@@ -27,7 +27,7 @@ function windowResized()
     var buttonLeft = document.getElementById("button-left");
     
     //List of all buttons in the order they should appear
-    var allButtons = [buttonUp,buttonLeft,buttonDown,buttonRight];
+    var allButtons = [buttonLeft,buttonUp,buttonDown,buttonRight];
     
     var winWidth = window.innerWidth;
     var winHeight = window.innerHeight;

@@ -108,9 +108,15 @@ function drawMan()
         
         ctx.fillStyle = BACKGROUND_COLOUR;
         
-        ctx.fillRect(oldMazeCellDrawX + (tileWidth * 0.15),
-                     oldMazeCellDrawY + (tileHeight * 0.15),
-                     manWidth, manHeight);
+        ctx.fillRect(oldMazeCellDrawX + 3,
+                     oldMazeCellDrawY + 3,
+                     tileWidth-6, tileHeight-6);
+                     
+        ctx.fillStyle = TRAIL_COLOUR;
+        
+        ctx.fillRect(oldMazeCellDrawX + (tileWidth*0.4),
+                     oldMazeCellDrawY + (tileHeight*0.4),
+                     tileWidth*0.15, tileHeight*0.15);
     }
     
     //drawn the new position of the man
